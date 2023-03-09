@@ -1,0 +1,17 @@
+.book-form, .book-list-container {
+    position: relative;
+}
+
+.book-list-group {
+    height: 360px;
+    overflow-y: scroll;
+}
+
+/* To enhance the visibility of the border color when the element is in focus */
+.book-item > .col {
+    margin: 1px;
+}
+
+.book-item:hover:not(.active) {
+    background-color: rgba(0, 0, 0, .1);
+}

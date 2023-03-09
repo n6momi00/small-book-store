@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "dev:install": "npm i && concurrently \"npm run server:install\" \"npm run client:install\"",
+    "server:setup": "npm run db --prefix server",
+    "start": "concurrently \"npm run server:start\" \"npm run client:start\"",
+    "server:start": "npm run start --prefix server",
+    "client:start": "npm run start --prefix client",
+    "server:install": "cd server && npm i && cd..",
+    "client:install": "cd client && npm i && cd.."
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
